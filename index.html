@@ -1,149 +1,235 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FastPage Phoenix — Automated Websites & Reviews</title>
-  <meta name="description" content="FastPage Phoenix helps local businesses launch fast websites, automate invoices, and capture more reviews.">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FastPage Phoenix — Reviews, Websites & Automation</title>
+  <meta name="description" content="Launch fast. Capture more reviews. Automate the busywork. FastPage Phoenix builds a conversion-ready site, installs a review engine, and automates invoices—fast." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FastPage Phoenix — Reviews, Websites & Automation">
+  <meta property="og:description" content="Launch fast. Capture more reviews. Automate the busywork.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fastpagephoenix.github.io/">
+  <meta property="og:image" content="https://fastpagephoenix.github.io/images/logo.png">
+
+  <!-- Fav/Icon -->
+  <link rel="icon" href="images/logo.png" />
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css">
-  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
-    <div class="container header-inner">
-      <a class="logo" href="/"><img src="assets/logo.png" alt="FastPage Phoenix"></a>
+    <div class="container header__inner">
+      <a href="#" class="brand">
+        <img src="images/logo.png" alt="FastPage Phoenix" class="brand__logo">
+        <span class="brand__text">FastPage <strong>Phoenix</strong></span>
+      </a>
+
       <nav class="nav" id="nav">
         <a href="#solutions">Solutions</a>
         <a href="#pricing">Pricing</a>
         <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav__cta">Contact</a>
       </nav>
-      <button class="menu-btn" onclick="document.getElementById('nav').style.display = (getComputedStyle(document.getElementById('nav')).display==='none'?'flex':'none')">
-        Menu
+
+      <button class="menu" aria-label="Open menu" id="menuBtn">
+        <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container hero-inner">
-      <div>
-        <span class="badge">AI-assisted • Done-for-you setup</span>
-        <h1>Launch fast. <br>Capture more reviews. <br>Automate the busywork.</h1>
-        <p class="lede">We build a conversion-ready site, set up invoicing, and install a review engine that gets you more 5-stars — fast.</p>
-        <div class="cta">
-          <!-- Get Started (Google Form) -->
-          <a class="btn btn-primary" target="_blank" rel="noopener"
-             href="https://docs.google.com/forms/d/e/1FAIpQLSdMvU1Q_uMqbqT7hCtHx8H9uA9_5kSIBjVQcC4Zzkyh6FXNuA/viewform?usp=header">
-            Get Started
-          </a>
-          <!-- Book Kickoff (Calendar) -->
-          <a class="btn btn-ghost" target="_blank" rel="noopener"
-             href="https://calendar.google.com/appointments/schedules/AcZssZ1zeyK4Tsy1887gyOezfktqXX1PxUopgLDgEw5p9P5_sXHx3xIissY-zIVmt_YNu31w_pUWY5rR">
-            Book Kickoff
-          </a>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="kicker">AI-assisted • Done-for-you setup</p>
+        <h1>Launch fast. <br class="br-md">Capture more reviews. <br class="br-md">Automate the busywork.</h1>
+        <p class="lead">
+          We build a conversion-ready site, set up invoicing, and install a review engine that gets you more 5-stars — fast.
+        </p>
+        <div class="ctas">
+          <a class="btn btn--primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdMvU1Q_uMqbqT7hCtHx8H9uA9_5kSIBjVQcC4Zzkyh6FXNuA/viewform?usp=header" target="_blank" rel="noopener">Get Started</a>
+          <a class="btn btn--ghost" href="https://calendar.google.com/appointments/schedules/AcZssZ1zeyK4Tsy1887gyOezfktqXX1PxUopgLDgEw5p9P5_sXHx3xIissY-zIVmt_YNu31w_pUWY5rR" target="_blank" rel="noopener">Book Kickoff</a>
         </div>
-      </div>
 
-      <!-- Quick explainer card -->
-      <div class="hero-card">
-        <div class="kicker">What you get</div>
-        <ul>
-          <li>High-converting 1-page site (launch ready)</li>
+        <ul class="bullets">
+          <li>Launch-ready 1-page site</li>
           <li>Automated invoices & receipts</li>
           <li>Review capture system (SMS & email)</li>
           <li>Kickoff call and support</li>
         </ul>
       </div>
-    </div>
-  </section>
 
-  <!-- Solutions -->
-  <section id="solutions" class="section">
-    <div class="container">
-      <div class="kicker">Solutions</div>
-      <h2>Built for service businesses that need results today</h2>
-      <div class="grid-3">
+      <div class="hero__card">
         <div class="card">
-          <h3>Review Engine</h3>
-          <p>Request reviews automatically after each job and route unhappy feedback away from public listings.</p>
-        </div>
-        <div class="card">
-          <h3>Smart Website</h3>
-          <p>Fast, mobile-first landing page with clear CTAs and your services, photos, and trust badges.</p>
-        </div>
-        <div class="card">
-          <h3>Automated Invoices</h3>
-          <p>Intake → doc → PDF → email receipts. Clean, professional, and hands-off.</p>
+          <h3>What you get</h3>
+          <ul>
+            <li>Conversion-ready design</li>
+            <li>Payments + receipts wired in</li>
+            <li>Google review engine installed</li>
+            <li>Simple, repeatable SOPs</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="#pricing">See pricing</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section id="pricing" class="section pricing">
+  <!-- Solutions -->
+  <section class="section" id="solutions">
     <div class="container">
-      <div class="kicker">Pricing</div>
-      <h2>Simple tiers that scale with you</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Tier 1 — Starter System</h3>
-          <p class="price">$100/mo <span class="small">+ $200 setup</span></p>
-          <p>Core site + review requests + invoicing.</p>
-          <a class="btn btn-primary" target="_blank" rel="noopener"
-             href="https://docs.google.com/forms/d/e/1FAIpQLSdMvU1Q_uMqbqT7hCtHx8H9uA9_5kSIBjVQcC4Zzkyh6FXNuA/viewform?usp=header">Get Started</a>
+      <h2>Built for service businesses that need results today</h2>
+
+      <div class="grid grid--3">
+        <div class="feature">
+          <h3>Review Engine</h3>
+          <p>Request reviews automatically after each job and route unhappy feedback away from public listings.</p>
         </div>
-        <div class="card">
-          <h3>Tier 2 — Smart System</h3>
-          <p class="price">$200/mo <span class="small">+ $400 setup</span></p>
-          <p>Everything in Starter + advanced automations and reporting.</p>
-          <a class="btn btn-primary" target="_blank" rel="noopener"
-             href="https://docs.google.com/forms/d/e/1FAIpQLSdMvU1Q_uMqbqT7hCtHx8H9uA9_5kSIBjVQcC4Zzkyh6FXNuA/viewform?usp=header">Get Started</a>
+        <div class="feature">
+          <h3>Smart Website</h3>
+          <p>Fast, mobile-first landing page with clear CTAs, your services, photos, and trust badges.</p>
         </div>
-        <div class="card">
-          <h3>Tier 3 — Bulletproof System</h3>
-          <p class="price">$400/mo <span class="small">+ $800 setup</span></p>
-          <p>Full automation suite, priority support, and growth sprints.</p>
-          <a class="btn btn-primary" target="_blank" rel="noopener"
-             href="https://docs.google.com/forms/d/e/1FAIpQLSdMvU1Q_uMqbqT7hCtHx8H9uA9_5kSIBjVQcC4Zzkyh6FXNuA/viewform?usp=header">Get Started</a>
+        <div class="feature">
+          <h3>Automated Invoices</h3>
+          <p>Intake → Doc → PDF → email receipts. Clean, professional, and hands-off.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Process -->
-  <section id="process" class="section">
+  <section class="section alt" id="process">
     <div class="container">
-      <div class="kicker">Process</div>
-      <h2>From signup to first review — in days</h2>
-      <div class="grid-3">
-        <div class="card"><h3>1) Intake</h3><p>Fill the “Get Started” form with your details & services.</p></div>
-        <div class="card"><h3>2) Payment</h3><p>We generate an invoice instantly. Pay online and you’re queued.</p></div>
-        <div class="card"><h3>3) Kickoff</h3><p>Book your kickoff call to finalize content and go live.</p></div>
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Intake.</strong> Fill the quick form so we can set up your stack.</li>
+        <li><strong>Kickoff call.</strong> We confirm details, timelines, and next actions.</li>
+        <li><strong>Build & connect.</strong> Site, invoicing, and reviews with your branding.</li>
+        <li><strong>Go live.</strong> Turn on the engine. Start collecting reviews & payments.</li>
+      </ol>
+      <div class="ctas">
+        <a class="btn btn--primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdMvU1Q_uMqbqT7hCtHx8H9uA9_5kSIBjVQcC4Zzkyh6FXNuA/viewform?usp=header" target="_blank" rel="noopener">Get Started</a>
+        <a class="btn btn--ghost" href="https://calendar.google.com/appointments/schedules/AcZssZ1zeyK4Tsy1887gyOezfktqXX1PxUopgLDgEw5p9P5_sXHx3xIissY-zIVmt_YNu31w_pUWY5rR" target="_blank" rel="noopener">Book Kickoff</a>
       </div>
-      <div class="cta" style="margin-top:22px">
-        <a class="btn btn-ghost" target="_blank" rel="noopener"
-           href="https://calendar.google.com/appointments/schedules/AcZssZ1zeyK4Tsy1887gyOezfktqXX1PxUopgLDgEw5p9P5_sXHx3xIissY-zIVmt_YNu31w_pUWY5rR">Book Kickoff</a>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <h2>Simple pricing that grows with you</h2>
+      <div class="grid grid--3 pricing">
+        <div class="price">
+          <h3>Starter</h3>
+          <p class="price__num">$200 <span>setup</span></p>
+          <p class="price__sub">$100/mo</p>
+          <ul>
+            <li>1-page site</li>
+            <li>Review requests (email)</li>
+            <li>Invoices + PDF receipts</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="#process">Choose Starter</a>
+        </div>
+
+        <div class="price price--focus">
+          <h3>Smart</h3>
+          <p class="price__num">$400 <span>setup</span></p>
+          <p class="price__sub">$200/mo</p>
+          <ul>
+            <li>Everything in Starter</li>
+            <li>SMS review engine</li>
+            <li>Custom domain & tracking</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="#process">Choose Smart</a>
+        </div>
+
+        <div class="price">
+          <h3>Bulletproof</h3>
+          <p class="price__num">$800 <span>setup</span></p>
+          <p class="price__sub">$400/mo</p>
+          <ul>
+            <li>Everything in Smart</li>
+            <li>Priority support</li>
+            <li>Monthly performance report</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="#process">Choose Bulletproof</a>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Social proof (placeholder) -->
+  <section class="section alt">
+    <div class="container">
+      <h2>What business owners say</h2>
+      <div class="grid grid--3 testimonials">
+        <blockquote>“Went from 0 to 15 five-star reviews in two weeks.”</blockquote>
+        <blockquote>“Invoices + receipts just happen. Clients love it.”</blockquote>
+        <blockquote>“Clean site, clear CTAs, phones ringing—done.”</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Do I need to switch tools?</summary>
+        <p>No. We connect to what you already use where possible and keep it simple.</p>
+      </details>
+      <details>
+        <summary>How fast can we launch?</summary>
+        <p>Often within a few days after kickoff—your content + availability determine speed.</p>
+      </details>
+      <details>
+        <summary>Can I cancel anytime?</summary>
+        <p>Yes. No long-term contracts.</p>
+      </details>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="kicker">Contact</div>
-      <h2>Questions? Let’s talk.</h2>
-      <p class="lede">Email <a href="mailto:mark@fastpagephoenix.com">mark@fastpagephoenix.com</a></p>
+  <section class="section alt" id="contact">
+    <div class="container contact">
+      <div>
+        <h2>Ready to move?</h2>
+        <p>Pick a time for your kickoff and we’ll get you live fast.</p>
+        <div class="ctas">
+          <a class="btn btn--primary" href="https://calendar.google.com/appointments/schedules/AcZssZ1zeyK4Tsy1887gyOezfktqXX1PxUopgLDgEw5p9P5_sXHx3xIissY-zIVmt_YNu31w_pUWY5rR" target="_blank" rel="noopener">Book Kickoff</a>
+          <a class="btn btn--ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSdMvU1Q_uMqbqT7hCtHx8H9uA9_5kSIBjVQcC4Zzkyh6FXNuA/viewform?usp=header" target="_blank" rel="noopener">Get Started Form</a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container">© <span id="y"></span> FastPage Phoenix — All rights reserved.</div>
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> FastPage Phoenix</span>
+      <nav class="footer__nav">
+        <a href="#solutions">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
   </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+  <script>
+    // mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('nav');
+    menuBtn.addEventListener('click', () => nav.classList.toggle('nav--open'));
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
