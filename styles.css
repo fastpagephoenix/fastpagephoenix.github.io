@@ -123,3 +123,22 @@ h3{font-size:clamp(18px,2vw,22px)}
 .footer__nav{display:flex;gap:14px}
 .footer__nav a{text-decoration:none;color:#444}
 .footer__nav a:hover{color:var(--brand)}
+
+/* Header Demo Button */
+header .btn.small {
+  background: transparent;
+  border: 2px solid var(--brand);
+  color: var(--brand);
+  padding: 8px 18px;
+  margin-left: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+header .btn.small:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
