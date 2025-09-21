@@ -266,3 +266,35 @@ header .btn.small:hover {
   font-size: 0.85rem;
   color: #aaa;
 }
+/* Footer refinements */
+.footer { padding-top: 56px; padding-bottom: 56px; }
+.footer-content { max-width: 1100px; margin: 0 auto; }
+.footer-divider { max-width: 1100px; margin: 0 auto 24px; height: 3px; background: linear-gradient(90deg, var(--brand), #ff7a1a); }
+
+/* Logo a touch larger with subtle depth */
+.footer-logo { width: 110px; margin: 0 auto 14px; filter: drop-shadow(0 4px 14px rgba(243, 106, 0, 0.18)); }
+
+/* Button rhythm and hierarchy */
+.footer-buttons { gap: 14px; margin-top: 6px; margin-bottom: 18px; }
+.footer-buttons .btn { min-width: 180px; letter-spacing: .2px; }
+.footer-buttons .btn.small { border-width: 1.5px; }
+
+/* “Still on the fence?” section spacing harmony with footer */
+.fence { padding: 64px 0 28px; border-top: 1px solid rgba(0,0,0,.04); }
+.fence .btn { box-shadow: 0 6px 18px rgba(243,106,0,.18); }
+.fence .btn:hover { box-shadow: 0 8px 22px rgba(243,106,0,.22); }
+
+/* Mobile tidy-up */
+@media (max-width: 768px) {
+  .footer { padding-top: 44px; padding-bottom: 44px; }
+  .footer-logo { width: 90px; }
+  .footer-buttons .btn { width: 100%; max-width: 360px; }
+}
+
+/* Subtle focus rings for accessibility */
+.footer-buttons .btn:focus-visible,
+.fence .btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(243,106,0,.35);
+}
